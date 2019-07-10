@@ -1,0 +1,5 @@
+﻿open sys
+
+func isPrime(n) = true not in [n %% k for k := 2..<n]
+func primes(m) = n for n := 1..<m if isPrime(n)
+primes(32) take 5
