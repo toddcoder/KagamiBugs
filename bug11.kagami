@@ -1,0 +1,9 @@
+﻿open sys
+open math
+
+func polar(x, y)
+	let theta = atan2(y, x)
+	let r = hypot(x, y)
+	return [r, theta]
+
+[distance, angle] := polar(2, 2)
